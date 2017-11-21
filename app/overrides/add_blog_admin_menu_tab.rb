@@ -1,7 +1,7 @@
 Deface::Override.new(:virtual_path => "spree/layouts/admin",
                      :name => "blog_admin_tabs",
                      :insert_bottom => "#main-sidebar",
-                     :text => "<% if Spree.user_class && can?(:admin, Spree::BlogEntry) %><ul class='nav nav-sidebar'><%= BLOG, url: spree.admin_blog_entries_path, icon: 'comment' %></ul><% end %>",
+                     :text => "spree/admin/shared/blogging_sidebar_menu",
                      :disabled => false)
 
 

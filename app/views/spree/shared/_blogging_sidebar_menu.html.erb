@@ -1,0 +1,6 @@
+<% if can? :admin, Spree::BlogEntry %>
+  <ul class="nav nav-sidebar">
+  	<%= tab Spree::BLOG, url: spree.admin_blog_entries_path, icon: 'comment' %>
+    <%= tab Spree::Page, url: spree.admin_pages_url, icon: 'leaf', label: plural_resource_name(Spree::Page) %>
+  </ul>
+<% end %>
